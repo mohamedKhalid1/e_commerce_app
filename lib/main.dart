@@ -3,6 +3,7 @@ import 'package:e_commerce_app/views/screens/authentication/enter_password_scree
 import 'package:e_commerce_app/views/screens/authentication/enter_phone_number_screen.dart';
 import 'package:e_commerce_app/views/screens/authentication/enter_verification_code_screen.dart';
 import 'package:e_commerce_app/views/screens/authentication/your_information_screen.dart';
+import 'package:e_commerce_app/views/screens/main_screens/home_screen.dart';
 import 'package:e_commerce_app/views/screens/main_screens/main_screen.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_1.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_2.dart';
@@ -57,7 +58,6 @@ class MyApp extends StatelessWidget {
         PageView2.route: (context) => const PageView2(),
         PageView3.route: (context) => const PageView3(),
         PageView4.route: (context) => const PageView4(),
-        Test.route: (context) => Test(),
         EnterPhoneNumberScreen.route: (context) => EnterPhoneNumberScreen(),
         EnterPasswordScreen.route: (context) => EnterPasswordScreen(),
         YourInformationScreen.route: (context) => YourInformationScreen(),
@@ -66,7 +66,7 @@ class MyApp extends StatelessWidget {
             EnterVerificationCodeScreen(),
         MainScreen.route: (context) => const MainScreen(),
       },
-      initialRoute: EnterVerificationCodeScreen.route,
+      initialRoute: MainScreen.route,
     );
   }
 }

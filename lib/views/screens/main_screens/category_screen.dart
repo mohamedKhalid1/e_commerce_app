@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/views/widgets/main_screens_widgets/grid_view_categories.dart';
 import 'package:flutter/material.dart';
 
 class CategoryScreen extends StatelessWidget {
@@ -5,8 +6,9 @@ class CategoryScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text("Category Screen"),),
+    return SingleChildScrollView(
+      child: Container(
+          color: const Color(0xFFFBFCFF), child: GridViewCategories()),
     );
   }
 }

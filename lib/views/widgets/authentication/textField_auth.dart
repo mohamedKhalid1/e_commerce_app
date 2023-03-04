@@ -17,7 +17,6 @@ class TextFieldAuth extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-
         maxLength: maxLength,
         controller: controller,
         keyboardType: textInputType,
@@ -25,6 +24,7 @@ class TextFieldAuth extends StatelessWidget {
             prefixIcon: prefixIconWidget,
             filled: true,
             hintText: textHint,
+            hintStyle: Theme.of(context).textTheme.bodyMedium?.copyWith(fontSize: 16),
             enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(color: Colors.white, width: 2),
             ),

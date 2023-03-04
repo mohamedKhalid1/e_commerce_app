@@ -16,7 +16,7 @@ class MainScreen extends StatefulWidget {
 
 class _MainScreenState extends State<MainScreen> {
   late int selectedIndex = 0;
-  static const List screens = [
+  static List screens = [
     HomeScreen(),
     CategoryScreen(),
     NotificationScreen(),
