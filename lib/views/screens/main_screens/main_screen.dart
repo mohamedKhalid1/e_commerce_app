@@ -18,15 +18,9 @@ class _MainScreenState extends State<MainScreen> {
   late int selectedIndex = 0;
   static List screens = [
     HomeScreen(),
-    CategoryScreen(),
-    NotificationScreen(),
-    SettingScreen()
-  ];
-  static const List titles = [
-    "Grocery Plus",
-    "Category",
-    "Notification",
-    "Settings"
+    const CategoryScreen(),
+    const NotificationScreen(),
+    const SettingScreen()
   ];
 
   void onItemTapped(int index) {
@@ -39,14 +33,6 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          title: Text(
-            titles[selectedIndex],
-            style: Theme.of(context).textTheme.bodyLarge,
-          ),
-        ),
         body: screens[selectedIndex],
         bottomNavigationBar: BottomNavigationBar(
           elevation: 0,

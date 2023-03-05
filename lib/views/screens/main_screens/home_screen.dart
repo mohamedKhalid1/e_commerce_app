@@ -12,7 +12,15 @@ class HomeScreen extends StatelessWidget {
       child: Container(
         color: const Color(0xFFFBFCFF),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 10, left: 10),
+              child: Text(
+                "Grocery Plus",
+                style: Theme.of(context).textTheme.bodyLarge,
+              ),
+            ),
             ListTile(
               leading: Container(
                   padding: const EdgeInsets.all(10),
@@ -93,7 +101,9 @@ class HomeScreen extends StatelessWidget {
                           ),
                           const Text(
                             "vegetables",
-                            style: TextStyle(fontSize: 10,),
+                            style: TextStyle(
+                              fontSize: 10,
+                            ),
                           )
                         ],
                       ),
@@ -102,7 +112,7 @@ class HomeScreen extends StatelessWidget {
                 },
               ),
             ),
-            GridViewCategories(),
+            const GridViewCategories(),
           ],
         ),
       ),

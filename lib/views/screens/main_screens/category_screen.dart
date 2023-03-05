@@ -8,7 +8,28 @@ class CategoryScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Container(
-          color: const Color(0xFFFBFCFF), child: GridViewCategories()),
+          decoration: const BoxDecoration(
+              gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              Color(0xFFC4C4C4),
+              Colors.white,
+            ],
+          )),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(top: 10, left: 10, bottom: 40),
+                child: Text(
+                  "Category",
+                  style: Theme.of(context).textTheme.bodyLarge,
+                ),
+              ),
+              const GridViewCategories(),
+            ],
+          )),
     );
   }
 }
