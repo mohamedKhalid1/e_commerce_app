@@ -5,6 +5,8 @@ import 'package:e_commerce_app/views/screens/authentication/enter_verification_c
 import 'package:e_commerce_app/views/screens/authentication/your_information_screen.dart';
 import 'package:e_commerce_app/views/screens/main_screens/home_screen.dart';
 import 'package:e_commerce_app/views/screens/main_screens/main_screen.dart';
+import 'package:e_commerce_app/views/screens/main_screens/product_details_screen.dart';
+import 'package:e_commerce_app/views/screens/main_screens/product_screen.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_1.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_2.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_3.dart';
@@ -65,8 +67,10 @@ class MyApp extends StatelessWidget {
         EnterVerificationCodeScreen.route: (context) =>
             EnterVerificationCodeScreen(),
         MainScreen.route: (context) => const MainScreen(),
+        ProductDetailsScreen.route: (context) => const ProductDetailsScreen(),
+        ProductScreen.route: (context) => const ProductScreen(),
       },
-      initialRoute: MainScreen.route,
+      initialRoute:ProductScreen.route,
     );
   }
 }
