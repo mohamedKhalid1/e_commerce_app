@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/views/screens/add_credit_card_screen.dart';
 import 'package:e_commerce_app/views/screens/authentication/choose_password_screen.dart';
 import 'package:e_commerce_app/views/screens/authentication/enter_password_screen.dart';
 import 'package:e_commerce_app/views/screens/authentication/enter_phone_number_screen.dart';
@@ -69,8 +70,9 @@ class MyApp extends StatelessWidget {
         MainScreen.route: (context) => const MainScreen(),
         ProductDetailsScreen.route: (context) => const ProductDetailsScreen(),
         ProductScreen.route: (context) => const ProductScreen(),
+        AddCreditCardScreen.route: (context) => AddCreditCardScreen(),
       },
-      initialRoute:ProductScreen.route,
+      initialRoute:AddCreditCardScreen.route,
     );
   }
 }
