@@ -8,6 +8,7 @@ import 'package:e_commerce_app/views/screens/main_screens/home_screen.dart';
 import 'package:e_commerce_app/views/screens/main_screens/main_screen.dart';
 import 'package:e_commerce_app/views/screens/main_screens/product_details_screen.dart';
 import 'package:e_commerce_app/views/screens/main_screens/product_screen.dart';
+import 'package:e_commerce_app/views/screens/my_cards.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_1.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_2.dart';
 import 'package:e_commerce_app/views/screens/pageView_screens/pageView_3.dart';
@@ -71,8 +72,9 @@ class MyApp extends StatelessWidget {
         ProductDetailsScreen.route: (context) => const ProductDetailsScreen(),
         ProductScreen.route: (context) => const ProductScreen(),
         AddCreditCardScreen.route: (context) => AddCreditCardScreen(),
+        MyCards.route: (context) => MyCards(),
       },
-      initialRoute:AddCreditCardScreen.route,
+      initialRoute:MyCards.route,
     );
   }
 }
